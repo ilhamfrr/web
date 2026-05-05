@@ -53,8 +53,8 @@ export default async function BlogPage() {
                 key={post.id}
                 post={{
                   ...post,
-                  excerpt: post.excerpt || "",
-                  category: post.category || "",
+                  excerpt: post.excerpt ?? "",
+                  category: post.category ?? "",
                 }}
                 index={i}
               />
