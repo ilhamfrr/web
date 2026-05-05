@@ -49,7 +49,15 @@ export default async function BlogPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {posts.map((post, i) => (
-              <BlogCard key={post.id} post={post} index={i} />
+              <BlogCard
+                key={post.id}
+                post={{
+                  ...post,
+                  excerpt: post.excerpt || "",
+                  category: post.category || "",
+                }}
+                index={i}
+              />
             ))}
           </div>
         )}
