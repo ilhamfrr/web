@@ -7,6 +7,8 @@ import TextType from "@/components/TextType";
 import { Inter } from "next/font/google";
 
 
+export const dynamic = "force-dynamic";
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
@@ -162,7 +164,15 @@ export default async function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post, i) => (
-            <BlogCard key={post.id} post={post} index={i} />
+            <BlogCard
+              key={post.id}
+              post={{
+                ...post,
+                excerpt: post.excerpt ?? "",
+                category: post.category ?? "",
+              }}
+              index={i}
+            />
           ))}
         </div>
       </section>
