@@ -3,6 +3,8 @@ import { formatPrice } from "@/lib/utils";
 import Link from "next/link";
 import { ShoppingBag, ArrowRight, Sparkles } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Produk Digital | IlhamFrr",
   description: "Template, ebook, dan alat digital pilihan untuk mempercepat alur kerja Anda.",
