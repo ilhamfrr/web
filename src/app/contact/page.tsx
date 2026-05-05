@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function ContactPage() {
   const contacts = [
-    { label: "Email", value: "hello@ilhamfrr12.com", icon: Mail, href: "mailto:hello@ilhamfrr12.com" },
+    { label: "Email", value: "ilhamfrr12@gmail.com", icon: Mail, href: "mailto:ilhamfrr12@gmail.com" },
     { label: "Twitter", value: "@ilhamfrr", icon: TwitterIcon, href: "https://twitter.com/ilhamfrr" },
     { label: "GitHub", value: "ilhamfrr", icon: GithubIcon, href: "https://github.com/ilhamfrr" },
   ];
@@ -93,7 +93,7 @@ export default function ContactPage() {
               </p>
               <div className="pt-4">
                 <Link
-                  href="mailto:hello@ilhamfrr.dev"
+                  href="mailto:ilhamfrr12@gmail.com"
                   className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFFAF0] text-[#222831] font-black rounded-3xl hover:gap-6 transition-all duration-500 shadow-2xl"
                 >
                   Kirim Email Sekarang <ArrowRight size={20} />

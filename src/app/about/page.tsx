@@ -1,5 +1,6 @@
 import { ArrowRight, Code2, Globe, Laptop, Rocket, Sparkles } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Tentang | IlhamFrr",
@@ -31,7 +32,7 @@ export default function AboutPage() {
               Membangun <br /><span className="italic opacity-80 font-serif">Masa Depan</span> Digital.
             </h1>
             <p className="text-lg md:text-xl text-[#FFFAF0]/60 leading-relaxed animate-fade-up animate-delay-200">
-              Halo, saya Ilham Firdaus. Saya seorang pengembang dan kreator yang fokus membangun
+              Halo, saya Ilham. Saya seorang pengembang dan kreator yang fokus membangun
               produk untuk menyelesaikan masalah nyata. Perjalanan saya dimulai dari rasa ingin tahu terhadap kode
               dan telah berkembang menjadi semangat untuk membangun bisnis digital yang utuh.
             </p>
@@ -68,8 +69,8 @@ export default function AboutPage() {
           <div className="relative animate-fade-up animate-delay-400 lg:sticky lg:top-32">
             <div className="aspect-[4/5] bg-[#222831] rounded-[60px] overflow-hidden shadow-2xl relative group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#222831] to-transparent opacity-60"></div>
-              {/* Photo Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center text-[#FFFAF0]/5 font-black text-9xl rotate-90 select-none group-hover:scale-110 transition-transform duration-1000">
+              <Image src="/uploads/ilham.jpg" alt="" layout="fill" objectFit="cover" className="absolute inset-0" />
+              <div className="absolute inset-0 flex items-center justify-center text-[#FFFAF0]/40 font-black text-9xl rotate-90 select-none group-hover:scale-110 transition-transform duration-1000">
                 CREATOR
               </div>
               <div className="absolute bottom-12 left-12 right-12">

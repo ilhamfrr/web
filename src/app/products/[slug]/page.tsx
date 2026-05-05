@@ -120,8 +120,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
                 <div className="space-y-4">
                   <button className="w-full py-6 bg-[#FFFAF0] text-[#222831] font-black rounded-3xl flex items-center justify-center gap-3 transition-all duration-500 hover:gap-6 shadow-2xl group active:scale-95">
-                    <Download size={22} className="group-hover:translate-y-1 transition-transform" />
-                    BELI SEKARANG
+                    <a href="https://wa.me/6287855178087/?text=Halo Mas,%20Apakah%20produknya%20tersedia?">
+                      BELI SEKARANG
+                    </a>
                   </button>
                   <div className="flex items-center justify-center gap-3 text-[10px] text-[#FFFAF0]/30 font-black uppercase tracking-widest">
                     <ShieldCheck size={14} />

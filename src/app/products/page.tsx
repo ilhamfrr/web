@@ -85,9 +85,6 @@ export default async function ProductsPage() {
                   <div className="flex items-center gap-3 text-sm font-black text-[#FFFAF0] group-hover:gap-5 transition-all duration-500">
                     VIEW DETAILS <ArrowRight size={18} />
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#FFFAF0]/10 flex items-center justify-center text-[#FFFAF0] group-hover:bg-[#FFFAF0] group-hover:text-[#222831] transition-all">
-                    <ShoppingBag size={18} />
-                  </div>
                 </div>
               </div>
             </Link>
