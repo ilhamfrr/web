@@ -1,6 +1,17 @@
 import { prisma } from "@/lib/prisma";
 import BlogCard from "@/components/BlogCard";
 
+export const dynamic = "force-dynamic";
+
+const posts = await prisma.post.findMany({
+  where: {
+    published: true,
+  },
+  orderBy: {
+    createdAt: "desc",
+  },
+});
+
 export const metadata = {
   title: "Blog & Insight | IlhamFrr",
   description: "Artikel, tutorial, dan wawasan tentang pengembangan web, desain, dan bisnis digital.",
